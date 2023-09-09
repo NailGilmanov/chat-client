@@ -6,9 +6,16 @@
     height: 80vh;
     font-family: 'Elsie';
     text-align: center;
-    font-size: 197px;
-    padding-top: 25vh;
+    padding-top: 35vh;
     color: black;
+}
+
+.btn_register {
+    margin-top: 35vh;
+}
+
+.title {
+    font-size: 197px;
 }
 
 .text {
@@ -95,8 +102,11 @@
 
 @media (max-width: 1100px) {
     .hero {
-        font-size: 70px;
         padding-top: 34vh;
+    }
+
+    .title {
+        font-size: 70px;
     }
 }
 
@@ -120,8 +130,11 @@
         padding-top: 50px;
     }
 
-    .hero {
+    .title {
         font-size: 50px;
+    }
+
+    .hero {
         padding-top: 36vh;
     }
 

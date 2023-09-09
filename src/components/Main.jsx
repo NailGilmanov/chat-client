@@ -5,12 +5,16 @@ import symbol2 from '../images/symbol2.png';
 import image from '../images/image.png';
 import image3 from '../images/image3.png';
 
-    
+
 import styles from "../styles/Main.module.css";
 
 const Main = () => (
   <div>
-    <header className={styles.hero}>TATARHUB</header>
+    <header className={styles.hero}>
+        <h1 className={styles.title}>TATARHUB</h1>
+        <a href="/register"><button type="button" className="btn btn-success">Я ИЗУЧАЮ ТАТАРСКИЙ ЯЗЫК</button></a>
+        <a href="/register"><button type="button" className="btn btn-outline-dark">Я НОСИТЕЛЬ ТАТАРСКОГО ЯЗЫКА</button></a>
+    </header>
     <main className={styles.text}>
         <div className={styles.left}>
             <h2 className={styles.h2}>Дайте волю своему татарскому</h2>

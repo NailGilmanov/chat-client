@@ -40,6 +40,14 @@ button {
   font-family: Rubik, Roboto, sans-serif;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 25vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  margin-right: 40px;
+}
+
 a {
   color: rgb(48, 43, 43);
   text-decoration: none;
@@ -56,4 +64,15 @@ li {
   /* width: 340px; */
   margin: 0 auto;
   /* min-height: 100vh; */
+}
+
+@media (max-width: 600px) {
+  .btn {
+    margin-top: 15vh;
+    margin-right: 0;
+  }
+
+  .btn-outline-dark {
+    margin-top: 30px;
+  }
 }

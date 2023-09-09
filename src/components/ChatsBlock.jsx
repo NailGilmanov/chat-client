@@ -12,7 +12,9 @@ const FIELDS = {
 };
 
 const username = 'Nailka2027'
-const chatss = [ 'user1', 'user2', 'user3', 'user4' ]
+const chatss = [ 'user1' ]
+// const chatss = [ 'user1', 'user2', 'user3', 'user4' ]
+
 const roomsChats = {
   "user1": "1",
   "user2": "2",

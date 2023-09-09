@@ -1,0 +1,70 @@
+.authblock {
+    color: white !important;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 95vh;
+    position: absolute;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px !important;
+}
+
+.wrapper {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+#auth-block .wrapper input::placeholder, #auth-block .wrapper textarea::placeholder {
+    font-size: 20px;
+}
+
+.textarea {
+    width: calc(100% - 20px);
+    height: 45px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#auth-block .wrapper textarea {
+    padding-top: 12px;
+    height: 100px;
+}
+
+#auth-block .wrapper p {
+    font-size: 19px;
+}
+
+#auth-block .wrapper p span {
+    text-decoration: underline;
+}
+
+.regbtn {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    height: 52px;
+    font-size: 21px;
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    background: var(--button-gradient);
+}
+
+.link {
+    color: white;
+}
