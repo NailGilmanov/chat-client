@@ -2,30 +2,20 @@ import React from "react";
 
 import styles from "../styles/Register.module.css";
 
-const Register = () => {
-  let server_ip = "localhost:5000"
-  
-  function request_data(method, success, fail = () => {}) {
-      const request = new XMLHttpRequest();
-      request.onload = function() {
-          if (request.status === 200) {
-              let d = String(request.response)
-              console.log(d)
-              success(JSON.parse(d))
-          } else {
-              fail()
-          }
-      }
-      request.open("GET", server_ip+method, true);
-      request.send();
-  }
-  
+let username = ''
 
-    const registerF = () => {
-      // request_data(`register/${username.value}/${password.value}/${native.value}/${interesting.value}`, (d) => {
-      //   console.log(d)
-      // })
-    };
+let flag = true
+
+const registerF = () => {
+  if (flag) {
+    username = document.getElementById('username').value
+    localStorage.setItem('name', username)
+    console.log(username)
+    flag = false
+  }
+};
+
+const Register = () => {
 
     return (
     <div id="auth-block" className={styles.authblock}>
@@ -33,9 +23,10 @@ const Register = () => {
           <h1 className={styles.h1}>Регистрация</h1>
           <input className={styles.textarea} type="text" placeholder="Имя пользователя" id="username" />
           <input className={styles.textarea} type="text" placeholder="Пароль" id="password" />
-          <input className={styles.textarea} type="text" placeholder="Повторите пароль" id="password_insurance" />
+          <input className={styles.textarea} type="text" placeholder="Повторите пароль" />
+          <input className={styles.textarea} type="text" placeholder="Укажите ваши интересы" id="password_insurance" />
           <div id="jumbo-button-register"  className={styles.regbtn} onClick={registerF}>
-            <a className={styles.link} href='/menu'>
+            <a className={styles.link} href="/menu">
               Регистрация
             </a>
           </div>
@@ -44,4 +35,4 @@ const Register = () => {
     )
 };
 
-export default Register;
+export { Register }

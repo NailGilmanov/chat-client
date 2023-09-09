@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Main from "./Main";
 import ChatsBlock from "./ChatsBlock";
 import Chat from "./Chat";
-import Register from "./Register";
+import { Register } from "./Register";
 
 const AppRoutes = () => (
   <Routes>

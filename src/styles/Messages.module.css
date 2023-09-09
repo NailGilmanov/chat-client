@@ -49,3 +49,45 @@
 .me .user {
   padding-right: 10px;
 }
+
+.helptip {
+  padding: 3px 5px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative; /* Важно!
+  Размещать абсолютное позиционирование внутри
+  относительно данного тега */
+  width: auto;
+
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.div {
+  color: black;
+  padding: 8px;
+  margin: 5px;
+  background: #ebebeb;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  position: absolute; /* Важно!
+  Абсолютное позиционирование */
+  display: none; /* Важно! Скрыть */
+  left: 5px;
+  bottom: 30px;
+  z-index: 99; /* Важно!
+  Всплывающие подсказки всегда выше
+  нижеследующих элементов */
+  /* min-width: 400px; */
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  cursor: default;
+  /* display: none; */
+}
+.div:hover,
+.helptip span:hover {
+  background: #fff;
+}
